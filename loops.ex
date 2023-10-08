@@ -73,6 +73,13 @@ end
 
 
 
+def fibs(items)do
+
+    Enum.each(items,fn item ->spawn(IO.puts(getFibNumber(item)))  end)
+
+end
+
+
 def doubleForLoops(items1,items2) do
 
 
