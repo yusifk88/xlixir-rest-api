@@ -20,7 +20,10 @@ defmodule RestApiWeb.ItemJSON do
       id: item.id,
       name: item.name,
       description: item.description,
-      status: item.status
+      status: item.status,
+      created_at: item.inserted_at,
+      updated_at: item.updated_at
     }
+
   end
 end
