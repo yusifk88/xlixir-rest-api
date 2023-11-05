@@ -5,14 +5,14 @@ defmodule RestApiWeb.ItemJSON do
   Renders a list of items.
   """
   def index(%{items: items}) do
-    %{data: for(item <- items, do: data(item))}
+    %{items: for(item <- items, do: data(item))}
   end
 
   @doc """
   Renders a single item.
   """
   def show(%{item: item}) do
-    %{data: data(item)}
+    %{item: data(item)}
   end
 
   defp data(%Item{} = item) do
